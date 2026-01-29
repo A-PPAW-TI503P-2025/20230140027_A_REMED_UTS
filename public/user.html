@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🙋 Peminjaman Buku</h1>
+            <a href="index.html"><button class="btn-logout">Kembali</button></a>
+        </div>
+
+        <div class="card user-panel">
+            <h3>📍 Info Peminjaman</h3>
+            <p>Klik tombol pinjam pada buku yang tersedia. Sistem akan mencatat lokasi Anda.</p>
+            <p id="gpsStatus" style="font-weight: bold; color: blue;"></p>
+        </div>
+
+        <div id="userBookList" class="book-grid"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>loadBooksUser();</script>
+</body>
+</html>

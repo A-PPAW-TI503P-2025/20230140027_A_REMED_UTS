@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Akun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center-screen">
+        <div class="card" style="width: 400px; padding: 40px;">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <h1 style="color: #11998e;">Create Account</h1>
+                <p style="color: var(--text-light);">Daftar sebagai peminjam buku</p>
+            </div>
+
+            <input type="text" id="regUsername" placeholder="Buat Username" required>
+            <input type="password" id="regPassword" placeholder="Buat Password" required>
+            <button onclick="handleRegister()" class="btn-user">Sign Up</button>
+            
+            <p style="margin-top: 20px; text-align: center; font-size: 0.9rem;">
+                Sudah punya akun? <a href="index.html">Login disini</a>
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

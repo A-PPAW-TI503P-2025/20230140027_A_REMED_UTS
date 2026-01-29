@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>👮 Admin Dashboard</h1>
+            <a href="index.html"><button class="btn-logout">Kembali ke Menu</button></a>
+        </div>
+
+        <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+            <button onclick="loadBooksAdmin()" style="background:#e74c3c">📚 Kelola Buku</button>
+            <button onclick="loadLogs()" style="background:#f39c12">📋 Lihat Log User</button>
+        </div>
+
+        <div id="adminPanel" class="card admin-panel">
+            <h3>Tambah Buku Baru</h3>
+            <div style="display: flex; gap: 10px;">
+                <input type="text" id="title" placeholder="Judul">
+                <input type="text" id="author" placeholder="Penulis">
+                <input type="number" id="stock" placeholder="Stok" style="width:100px">
+            </div>
+            <button onclick="addBook()">Simpan</button>
+        </div>
+
+        <div id="dataList" class="book-grid"></div>
+    </div>
+
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <h3>✏️ Edit Buku</h3>
+            <input type="hidden" id="editId">
+            <input type="text" id="editTitle">
+            <input type="text" id="editAuthor">
+            <input type="number" id="editStock">
+            <button onclick="saveEdit()" style="margin-top:10px">Simpan Perubahan</button>
+            <button onclick="closeModal()" style="background:#ccc; margin-top:5px">Batal</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>loadBooksAdmin();</script>
+</body>
+</html>

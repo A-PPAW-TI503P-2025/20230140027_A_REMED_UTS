@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/A-PPAW-TI503P-2025/20230140027_A_REMED_UTS#readme",
   "dependencies": {
+    "cors": "^2.8.6",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "mysql2": "^3.16.2",
